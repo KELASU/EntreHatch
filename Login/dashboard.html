@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>n</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>    
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="pfp.png" alt="">
+          <span class="nav-item">DashBoard</span>
+        </a></li>
+        <li><a href="/Login/dashboard.html">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="/Login/Profile/profile.html">
+          <i class="fas fa-user"></i>
+          <span class="nav-item">Profile (Settings)</span>
+        </a></li>
+        <li><a href="/Login/wallet/gummiwallet.html">
+          <i class="fas fa-wallet"></i>
+          <span class="nav-item">Gummi Wallet</span>
+        </a></li>
+        <li><a href="/Login/transHistory/transaction.html">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Transaction History
+          </span>
+        </a></li>
+      
+        <li><a href="/Login/Help/help.html">
+          <i class="fas fa-question-circle"></i>
+          <span class="nav-item">Help</span>
+        </a></li>
+        <li><a href="/index.html" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+        <img src ="/gummi.png" class="nown">
+      </ul>
+    </nav>
+
+    <section class="main">
+
+      <section class="main-course">
+        <h1>Customized Gummies</h1>
+        <div class="course-box">
+          <ul>
+            <li class="active">In progress</li>
+            <li>Finished</li>
+            <li>Purchased</li>
+          </ul>
+          <div class="course">
+            <div class="box">
+              <h3>New Gummy Bears</h3>
+              <p>Picking Flavor</p>
+              <button id="openModalContinue">continue</button>
+              <div class="flavor" id="modal">
+                <div class="course-box">
+                  <h1> Chooose Your Sweets</h1>
+                  <div class="course">
+                    <button class = "box naomis" id="openModal1">
+   
+                        <img src="guem.png" alt="" >
+  
+                      <p>
+                        Gummy
+                      </p>
+                    </button>
+                    <div class="Onigiri" id="modal1">
+                      <div class="course-box">
+                        <h1> Chooose Your Flavor</h1>
+                        <div class="course">
+                          <button class = "box naomis" id="openModal2">
+         
+                              <img src="FlavorImg/Blueberry.png" alt="" >
+        
+                            <p>
+                              Blueberry
+                            </p>
+                          </button>
+                          <div class="rice" id="modal2">
+                            <div class="course-box">
+                              <h1> Chooose Your Shape</h1>
+                              <div class="course">
+                                <button class = "box naomis" id="openModal3">
+               
+                                  <img src="ShapeImg/bear.png" alt="" >
+              
+                                  <p>
+                                    Bear
+                                  </p>
+                                </button>
+                                <div class="rice" id="modal3">
+                                  <div class="course-box">
+                                    <h1> Save Or Chek Out</h1>
+                                    <div class="course">
+                                      <button class = "box naomis" id="closeModalAll">
+                     
+                                        <img src="wallet/save.png" alt="" >
+                    
+                                        <p>
+                                          Save
+                                        </p>
+                                      </button>
+                                      
+                                      <button class = "box naomis" id="openModal4">
+        
+                                        <img src="wallet/Checkout.png" alt="">
+        
+                                        <p>
+                                          CheckOut
+                                        </p>
+                                      </button>
+                                      <div class="rice" id="modal4">
+                                        <div class="course-box">
+                                          <h1> Save Or Chek Out</h1>
+                                          <div class="course">
+                                            <button class = "box naomis" id="">
+                           
+                                              <img src="wallet/danas.png" alt="" >
+                          
+                                              <p>
+                                                Dana
+                                              </p>
+                                            </button>
+                                            <button class = "box naomis">
+              
+                                              <img src="wallet/gopayer.png" alt="">
+              
+                                              <p>
+                                                GoPay
+                                              </p>
+                                            </button>
+                                            <button class = "box naomis">
+              
+                                              <img src="wallet/Bank.png" alt="">
+              
+                                              <p>
+                                                Transfer
+                                              </p>
+                                            </button>
+                                            
+        
+                                          </div>
+                          
+                                          <button id="closeModal4">Back</button>
+                                        </div>
+                          
+                          
+                                      </div>
+  
+                                    </div>
+                    
+                                    <button id="closeModal3">Back</button>
+                                  </div>
+                    
+                    
+                                </div>
+                                <button class = "box naomis">
+  
+                                  <img src="ShapeImg/chicken.png" alt="">
+  
+                                  <p>
+                                    Chicken
+                                  </p>
+                                </button>
+                                <button class = "box naomis">
+  
+                                   <img src="ShapeImg/pizza.png" alt="">
+  
+                                  <p>
+                                    Pizza
+                                  </p>
+                                </button>
+                                <button class = "box naomis">
+  
+                                  <img src="ShapeImg/worm.png" alt="">
+  
+                                 <p>
+                                   Worm
+                                 </p>
+                                </button>
+                                <button class = "box naomis">
+  
+                                  <img src="ShapeImg/dragon.png" alt="">
+  
+                                 <p>
+                                   Dragon
+                                 </p>
+                                </button>
+                                <button class = "box naomis">
+  
+                                  <img src="ShapeImg/dinos.png" alt="">
+  
+                                 <p>
+                                   Dino
+                                 </p>
+                                </button>
+  
+              
+              
+                              </div>
+              
+                              <button id="closeModal2">Back</button>
+                            </div>
+              
+              
+                          </div>
+                          <button class = "box naomis">
+  
+                              <img src="FlavorImg/Avocado.png" alt="">
+  
+                            <p>
+                              Avocado
+                            </p>
+                          </button>
+                          <button class = "box naomis">
+  
+                            <img src="FlavorImg/Strawberry.png" alt="">
+  
+                          <p>
+                            Strawberry
+                          </p>
+                          </button>
+                          <button class = "box naomis">
+  
+                            <img src="FlavorImg/Raspberry.png" alt="">
+  
+                          <p>
+                            Raspberry
+                          </p>
+                          </button>
+                          <button class = "box naomis">
+  
+                            <img src="FlavorImg/Banana.png" alt="">
+  
+                          <p>
+                            Banana
+                          </p>
+                          </button>
+                          <button class = "box naomis">
+  
+                            <img src="FlavorImg/Mint.png" alt="">
+  
+                          <p>
+                            Mint
+                          </p>
+                          </button>
+                          <button class = "box naomis">
+  
+                            <img src="FlavorImg/Orange.png" alt="">
+  
+                          <p>
+                            Orange
+                          </p>
+                          </button>
+                          <button class = "box naomis">
+  
+                            <img src="FlavorImg/Steak.png" alt="">
+  
+                          <p>
+                            Steak
+                          </p>
+                          </button>
+  
+        
+                        </div>
+        
+                        <button id="closeModal1">Back</button>
+                      </div>
+        
+        
+                    </div>
+                    <button class = "box naomis">
+                      <a href="cream" target="_blank">
+                        <img src="candy.png" alt="">
+                      </a>
+                      <p>
+                        Candy
+                      </p>
+                    </button>
+                    <button class = "box naomis">
+                      <a href="ice" target="_blank">
+                        <img src="others.png" alt="">
+                      </a>
+                      <p>
+                        Others
+                      </p>
+                    </button>
+  
+  
+                  </div>
+  
+                  <button id="closeModal">Close</button>
+                </div>
+  
+  
+              </div>
+            </div>
+            <div class="box newbt">
+            <button class="plus-button" id="openModal">+</button> 
+            <div class="flavor" id="modal">
+              <div class="course-box">
+                <h1> Chooose Your Sweets</h1>
+                <div class="course">
+                  <button class = "box naomis" id="openModal1">
+ 
+                      <img src="guem.png" alt="" >
+
+                    <p>
+                      Gummy
+                    </p>
+                  </button>
+                  <div class="Onigiri" id="modal1">
+                    <div class="course-box">
+                      <h1> Chooose Your Flavor</h1>
+                      <div class="course">
+                        <button class = "box naomis" id="openModal2">
+       
+                            <img src="FlavorImg/Blueberry.png" alt="" >
+      
+                          <p>
+                            Blueberry
+                          </p>
+                        </button>
+                        <div class="rice" id="modal2">
+                          <div class="course-box">
+                            <h1> Chooose Your Shape</h1>
+                            <div class="course">
+                              <button class = "box naomis" id="openModal3">
+             
+                                <img src="ShapeImg/bear.png" alt="" >
+            
+                                <p>
+                                  Bear
+                                </p>
+                              </button>
+                              <div class="rice" id="modal3">
+                                <div class="course-box">
+                                  <h1> Save Or Chek Out</h1>
+                                  <div class="course">
+                                    <button class = "box naomis" id="closeModalAll">
+                   
+                                      <img src="wallet/save.png" alt="" >
+                  
+                                      <p>
+                                        Save
+                                      </p>
+                                    </button>
+                                    
+                                    <button class = "box naomis" id="openModal4">
+      
+                                      <img src="wallet/Checkout.png" alt="">
+      
+                                      <p>
+                                        CheckOut
+                                      </p>
+                                    </button>
+                                    <div class="rice" id="modal4">
+                                      <div class="course-box">
+                                        <h1> Payment Method</h1>
+                                        <div class="course">
+                                          <button class = "box naomis" id="openModal5">
+                         
+                                            <img src="wallet/danas.png" alt="" >
+                        
+                                            <p>
+                                              Dana
+                                            </p>
+                                          </button>
+                                          <div class="rice" id="modal5">
+                                            <div class="course-box">
+                                              <h1> Continue</h1>
+                                              <div class="course">
+                                                <button class = "box naomis" id="">
+                               
+                                                  <img src="Invoice.jpg" alt="" >
+                              
+                                                  <p>
+                                                    Click to continue
+                                                  </p>
+                                                </button>
+                                      
+                                                
+            
+                                              </div>
+                              
+                                              <button id="closeModal5">Back</button>
+                                            </div>
+                              
+                              
+                                          </div>
+                                          
+
+                                          <button class = "box naomis">
+            
+                                            <img src="wallet/gopayer.png" alt="">
+            
+                                            <p>
+                                              GoPay
+                                            </p>
+                                          </button>
+                                          <button class = "box naomis">
+            
+                                            <img src="wallet/Bank.png" alt="">
+            
+                                            <p>
+                                              Transfer
+                                            </p>
+                                          </button>
+                                          
+      
+                                        </div>
+                        
+                                        <button id="closeModal4">Back</button>
+                                      </div>
+                        
+                        
+                                    </div>
+
+                                  </div>
+                  
+                                  <button id="closeModal3">Back</button>
+                                </div>
+                  
+                  
+                              </div>
+                              <button class = "box naomis">
+
+                                <img src="ShapeImg/chicken.png" alt="">
+
+                                <p>
+                                  Chicken
+                                </p>
+                              </button>
+                              <button class = "box naomis">
+
+                                 <img src="ShapeImg/pizza.png" alt="">
+
+                                <p>
+                                  Pizza
+                                </p>
+                              </button>
+                              <button class = "box naomis">
+
+                                <img src="ShapeImg/worm.png" alt="">
+
+                               <p>
+                                 Worm
+                               </p>
+                              </button>
+                              <button class = "box naomis">
+
+                                <img src="ShapeImg/dragon.png" alt="">
+
+                               <p>
+                                 Dragon
+                               </p>
+                              </button>
+                              <button class = "box naomis">
+
+                                <img src="ShapeImg/dinos.png" alt="">
+
+                               <p>
+                                 Dino
+                               </p>
+                              </button>
+
+            
+            
+                            </div>
+            
+                            <button id="closeModal2">Back</button>
+                          </div>
+            
+            
+                        </div>
+                        <button class = "box naomis">
+
+                            <img src="FlavorImg/Avocado.png" alt="">
+
+                          <p>
+                            Avocado
+                          </p>
+                        </button>
+                        <button class = "box naomis">
+
+                          <img src="FlavorImg/Strawberry.png" alt="">
+
+                        <p>
+                          Strawberry
+                        </p>
+                        </button>
+                        <button class = "box naomis">
+
+                          <img src="FlavorImg/Raspberry.png" alt="">
+
+                        <p>
+                          Raspberry
+                        </p>
+                        </button>
+                        <button class = "box naomis">
+
+                          <img src="FlavorImg/Banana.png" alt="">
+
+                        <p>
+                          Banana
+                        </p>
+                        </button>
+                        <button class = "box naomis">
+
+                          <img src="FlavorImg/Mint.png" alt="">
+
+                        <p>
+                          Mint
+                        </p>
+                        </button>
+                        <button class = "box naomis">
+
+                          <img src="FlavorImg/Orange.png" alt="">
+
+                        <p>
+                          Orange
+                        </p>
+                        </button>
+                        <button class = "box naomis">
+
+                          <img src="FlavorImg/Steak.png" alt="">
+
+                        <p>
+                          Steak
+                        </p>
+                        </button>
+
+      
+                      </div>
+      
+                      <button id="closeModal1">Back</button>
+                    </div>
+      
+      
+                  </div>
+                  <button class = "box naomis">
+                    <a href="cream" target="_blank">
+                      <img src="candy.png" alt="">
+                    </a>
+                    <p>
+                      Candy
+                    </p>
+                  </button>
+                  <button class = "box naomis">
+                    <a href="ice" target="_blank">
+                      <img src="others.png" alt="">
+                    </a>
+                    <p>
+                      Others
+                    </p>
+                  </button>
+
+
+                </div>
+
+                <button id="closeModal">Close</button>
+              </div>
+
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-course">
+        <h1>Special Offers</h1>
+        <div class="course-box">
+          <ul>
+            <li class="active">This Season And Upcomming</li>
+          </ul>
+          <div class="course">
+            <div class="box">
+              <img src="Thanks.jpg" class="neow">
+              <h3>This season</h3>
+              <p>Special Thanks giving candy pack</p>
+              <button>Purchase</button>
+            </div>
+            <div class="box">
+              <img src="Christ.jpg" class="neow">
+              <h3>Comming soon next season</h3>
+              <p>Special Christmas pack</p>
+              <button>Comming Soon</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+        $(".hamburger-menu").click(function() {
+          $("nav ul").toggleClass("active");
+          $(this).toggleClass("active");
+          $("nav").toggleClass("nav-background-color-change");
+        });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

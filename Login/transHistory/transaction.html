@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>n</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>    
+      <ul>
+        <li><a href="" class="logo">
+          <img src="/Login/pfp.png" alt="">
+          <span class="nav-item">DashBoard</span>
+        </a></li>
+        <li><a href="/Login/dashboard.html">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="/Login/Profile/profile.html">
+          <i class="fas fa-user"></i>
+          <span class="nav-item">Profile (Settings)</span>
+        </a></li>
+        <li><a href="/Login/wallet/gummiwallet.html">
+          <i class="fas fa-wallet"></i>
+          <span class="nav-item">Gummi Wallet</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Transaction History
+          </span>
+        </a></li>
+        <li><a href="/Login/Help/help.html">
+          <i class="fas fa-question-circle"></i>
+          <span class="nav-item">Help</span>
+        </a></li>
+        <li><a href="/index.html" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+        <img src ="/gummi.png" class="nown">
+      </ul>
+    </nav>
+
+    <section class="main">
+
+      <section class="main-course">
+        <div id="transaction-history-chart">
+          <h1>Transaction History</h1>
+          <div class="chart-container">
+            <div class="chart-canvas">
+              <canvas id="transactionChartByMonth"></canvas>
+            </div>
+            <div class="chart-canvas">
+              <canvas id="transactionChartByWeek"></canvas>
+            </div>
+            <div class="chart-canvas">
+              <canvas id="transactionChartByYear"></canvas>
+            </div>
+          </div>
+
+          <div class="course-box">
+            <ul>
+              <li class="active">Transaction History</li>
+              
+            </ul>
+            <div class="course">
+              <div class="box">
+                <h3>Nov 20, 2023</h3>
+                <p>Amount :2</p>
+                <p>Item Bought :Custom Gummy</p>
+                <p>Price :Rp 75,000</p>
+                <p>Paid with :GoPay</p>
+  
+              </div>
+            </div>
+            <div class="course">
+              <div class="box">
+                <h3>Nov 11, 2023</h3>
+                <p>Amount :1</p>
+                <p>Item Bought :11/11 Special Candy pack</p>
+                <p>Price :Rp 75,000</p>
+                <p>Paid with :GoPay</p>
+              </div>
+            </div>
+            <div class="course">
+              <div class="box">
+                <h3>Oct 31, 2023</h3>
+                <p>Amount :1</p>
+                <p>Item Bought :Halloween Party pack</p>
+                <p>Price :Rp 200,000</p>
+                <p>Paid with :Bank Transfer</p>
+              </div>
+            </div>
+            <div class="course">
+              <div class="box">
+                <h3>Sep 26, 2023</h3>
+                <p>Amount :1</p>
+                <p>Item Bought :Small Gummy Party Pack</p>
+                <p>Price :Rp 75,000</p>
+                <p>Paid with :Dana</p>
+              </div>
+            </div>
+            <div class="course">
+              <div class="box">
+                <h3>Sep 13, 2023</h3>
+                <p>Amount :3</p>
+                <p>Item Bought :Custom Candy Pack</p>
+                <p>Price :Rp 75,000</p>
+                <p>Paid with :GoPay</p>
+              </div>
+            </div>
+
+          </div>
+      </div>
+      </section>
+    </section>
+  </div>
+  <script>
+    $(document).ready(function() {
+        $(".hamburger-menu").click(function() {
+          $("nav ul").toggleClass("active");
+          $(this).toggleClass("active");
+          $("nav").toggleClass("nav-background-color-change");
+        });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
