@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage Gummi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="gummi.png" alt="Logo" />
+              <h3>GUMMI</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><a href="#" class="btn">SignUp</a></button></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+        <div id='login-form'class='login-page'>
+          <div class="form-box">
+              <div class='button-box'>
+                  <div id='btn'></div>
+                  <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                  <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+              </div>
+              <form id='login' class='input-group-login'>
+                  <input type='text'class='input-field'placeholder='Email Id' required >
+      <input type='password'class='input-field'placeholder='Enter Password' required>
+      <input type='checkbox'class='check-box'><span>Remember Password</span>
+      <button type='submit'class='submit-btn'><a href="Login/dashboard.html">Log in</a></button>
+   </form>
+   <form id='register' class='input-group-register'>
+       <input type='text'class='input-field'placeholder='First Name' required>
+       <input type='text'class='input-field'placeholder='Last Name ' required>
+       <input type='email'class='input-field'placeholder='Email Id' required>
+       <input type='password'class='input-field'placeholder='Enter Password' required>
+       <input type='password'class='input-field'placeholder='Confirm Password'  required>
+       <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                  <button type='submit'class='submit-btn'>Register</button>
+         </form>
+          </div>
+      </div>
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Personalize your gummy,</h1>
+                <h1>Customze their <span></span></h1>
+              </div>
+              <p class="text">
+                Gummi a convenient and highly tailored solution to the often overwhelming world of vitamins and supplements for your average person. 
+              <div class="cta">
+                <a href="#" class="btn">Get started</a>
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="GummyBears.png" alt="Product Image" class="product" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btns">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
